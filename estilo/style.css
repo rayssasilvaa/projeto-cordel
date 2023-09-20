@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Crimson+Pro&family=Fjalla+One&family=Lilita+One&family=Public+Sans:wght@200&family=Rubik:ital@1&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Crimson+Pro&family=Fjalla+One&family=Lilita+One&family=Public+Sans:wght@200&family=Rubik:ital@1&family=Sriracha&family=Staatliches&display=swap');
+
+:root{
+    --fonte: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte1:'Lilita One', cursive;
+    --fonte2:'Sriracha', cursive;
+}
+
+*{
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    font-family: var(--fonte);
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    font-size: 8vw;
+    font-family: var(--fonte1);
+    padding-top: 30px;
+    font-variant: small-caps;
+}
+
+header p{
+    padding-bottom:30px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    font-family: var(--fonte2);
+    padding-top:10vh ;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 2.9vw;
+}
+
+section p{
+    padding-bottom: 1em;
+}
+
+section.normal{
+    background-color: white;
+    color: dark;
+}
+
+section.img{
+    background-color: rgb(1, 1, 60);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px #171717;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+section.img p{
+    text-shadow: 1px 1px 0px black;
+    padding: 5px;
+    display: inline-block;
+    background-color: #17171752;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
